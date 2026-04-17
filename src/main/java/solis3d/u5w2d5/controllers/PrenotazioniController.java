@@ -41,7 +41,7 @@ public class PrenotazioniController {
         return this.prenotazioniService.findAll();
     }
 
-    @GetMapping("/{prenotazioniId}")
+    @GetMapping("/{prenotazioneId}")
     public Prenotazione findById(@PathVariable UUID prenotazioneId) {
         return this.prenotazioniService.findById(prenotazioneId);
     }
