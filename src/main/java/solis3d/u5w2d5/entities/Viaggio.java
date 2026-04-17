@@ -33,6 +33,7 @@ public class Viaggio {
     }
 
     public UUID getId() {
+        return id;
     }
 
     public String getDestinazione() {
