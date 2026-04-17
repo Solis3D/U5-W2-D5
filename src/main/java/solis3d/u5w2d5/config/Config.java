@@ -1,4 +1,4 @@
-package solis3d.u5w2d5;
+package solis3d.u5w2d5.config;
 
 import com.cloudinary.Cloudinary;
 import org.springframework.beans.factory.annotation.Value;
