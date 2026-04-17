@@ -39,7 +39,7 @@ public class PrenotazioniService {
         return this.prenotazioniRepository.save(newPrenotazione);
     }
 
-    List<Prenotazione> findAll() {
+    public List<Prenotazione> findAll() {
         return this.prenotazioniRepository.findAll();
     }
 

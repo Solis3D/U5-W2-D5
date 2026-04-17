@@ -83,7 +83,7 @@ public class DipendentiService {
             throw new BadRequestException("Il file è obbligatorio, non può essere vuoto!");
         }
 
-        if (file.getContentType() == null || !file.getContentType().equals("image/")) {
+        if (file.getContentType() == null || !file.getContentType().startsWith("image/")) {
             throw new BadRequestException("Il file caricato deve essere un'immagine!");
         }
 

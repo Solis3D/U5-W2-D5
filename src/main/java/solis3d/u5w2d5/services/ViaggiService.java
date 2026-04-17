@@ -24,7 +24,7 @@ public class ViaggiService {
         return viaggiRepository.save(newViaggio);
     }
 
-    List<Viaggio> findAll() {
+    public List<Viaggio> findAll() {
         return this.viaggiRepository.findAll();
     }
 
