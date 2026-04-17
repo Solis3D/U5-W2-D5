@@ -47,7 +47,7 @@ public class ViaggiController {
         return this.viaggiService.findById(viaggioId);
     }
 
-    @PutMapping("/{viaggioId}/stato")
+    @PutMapping("/{viaggioId}")
     public Viaggio findById(@PathVariable UUID viaggioId, @RequestBody @Validated ViaggioDTO body, BindingResult validationResult) {
         if (validationResult.hasErrors()) {
             List<String> errors = validationResult.getFieldErrors().stream().map(error -> error.getDefaultMessage()).toList();
